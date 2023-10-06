@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>admin page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  
+    <script src="../script/main.js" defer></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- <img src="../user/images/shop.jpg" alt="logo" class="logo" /> -->
+        <h3>Specs Maker</h3>
+        <a href="home.html" class="link text-success">Home</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="card.htmlnavbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div>
+          <!-- <button class="btn btn-outline-success" type="submit"> -->
+
+          <!-- </button> -->
+          <!-- <button
+            class="btn btn-outline-success text-decoration-none"
+            type="submit"
+          > -->
+            <a href="../Admin/adminorders.html" class="p-3">Orders</a>
+            <a href="../user/cart.html" class="p-3">cart</a>
+          </button>
+          <button class="btn btn-outline-success" type="submit">
+            <a href="../User/signin.html" class="link text-black">logout</a>
+          </button>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="navbar navbar-expand-lg bg-light p-5 d-flex flex-column">
+      <h2 id="saveHandler">Welcome Admin!! </h2>
+      <button class="btn bg-secondary text-white"> <a href="../admin/addproduct.html" class="text-decoration-none" onclick = "saveOrUpdateHandler">Add </a></button>
+    </div>
+   
+    <table class="table align-middle mb-0 m-5">
+      <thead class="bg-light">
+        <tr>
+          <th >Product</th>
+          <th>Product details</th>
+          <th>Price</th>
+          <th>status</th>
+          <th>Action</th>
+        </tr>
+        
+      </thead>
+
+      <tbody id="productsTableBody">
+        <!-- <tr>
+          <td>
+            <div class="d-flex align-items-center">
+              <img
+                src="../image3.jpg"
+                alt="Glass"
+                style="width: 45px; height: 45px"
+                class="rounded-circle"
+              />
+              <div class="ms-3">
+                <p class="fw-bold mb-1">Sun Glass</p>
+                <!-- <p class="text-muted mb-0">john.doe@gmail.com</p> -->
+              <!-- </div>
+            </div>
+          </td>
+          <td>
+            <p class="fw-normal mb-1">Say no to sun rays</p>
+          </td>
+          <td>₹700</td>
+          <td>pending</td>
+          <td>
+            <button type="button" class="btn btn-link btn-sm btn-rounded bg-light text-decoration-none">
+              Edit
+            </button>
+            <button type="button" class="btn btn-link btn-sm btn-rounded bg-danger text-decoration-none">
+             delete
+            </button>
+          </td>
+        </tr> --> -->
+      </tbody>
+     
+    </table>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
